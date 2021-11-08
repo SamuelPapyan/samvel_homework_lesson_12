@@ -26,14 +26,14 @@ public class ThirdActivity extends AppCompatActivity {
                 .setTitle("Are you sure?")
                 .setIcon(R.drawable.info_icon)
                 .setMessage("You won't be albe to recover this file.")
-                .setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
                         setAlertDialogue2();
                     }
                 })
-                .setNegativeButton("Delete", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
