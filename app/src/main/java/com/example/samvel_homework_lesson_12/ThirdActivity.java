@@ -22,7 +22,7 @@ public class ThirdActivity extends AppCompatActivity {
         }
     }
     public void setAlertDialogue1(){
-        AlertDialog alertDialog = new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this)
                 .setTitle("Are you sure?")
                 .setIcon(R.drawable.info_icon)
                 .setMessage("You won't be albe to recover this file.")
@@ -39,10 +39,11 @@ public class ThirdActivity extends AppCompatActivity {
                         dialog.cancel();
                     }
                 })
-                .create();
+                .create()
+                .show();
     }
     public void setAlertDialogue2(){
-        AlertDialog alertDialog = new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this)
                 .setTitle("Deleted!")
                 .setMessage("Your imaginary file was deleted.")
                 .setIcon(R.drawable.check_icon)
@@ -51,7 +52,8 @@ public class ThirdActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
                     }
-                }).create();
+                }).create()
+                    .show();
     }
 
 }
