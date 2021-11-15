@@ -10,9 +10,44 @@
         android:id="@+id/alertDialogButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:text="Alert Dialog 1"
+        android:text="@string/alert_doalog_1"
+        app:layout_constraintBottom_toTopOf="@+id/alertDialogButton2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/alertDialogButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_dialog_2"
+        app:layout_constraintBottom_toTopOf="@+id/alertDialogButton3"
+        app:layout_constraintEnd_toEndOf="@+id/alertDialogButton1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/alertDialogButton1"
+        app:layout_constraintTop_toBottomOf="@+id/alertDialogButton1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/alertDialogButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_dialog_3"
+        app:layout_constraintBottom_toTopOf="@+id/alertDialogButton4"
+        app:layout_constraintEnd_toEndOf="@+id/alertDialogButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/alertDialogButton2"
+        app:layout_constraintTop_toBottomOf="@+id/alertDialogButton2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/alertDialogButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_dialog_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/alertDialogButton3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/alertDialogButton3"
+        app:layout_constraintTop_toBottomOf="@+id/alertDialogButton3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

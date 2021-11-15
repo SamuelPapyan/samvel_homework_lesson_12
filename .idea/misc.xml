@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12/app/src/main/res/drawable/rounded_white_background.xml" value="0.1675925925925926" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12/app/src/main/res/layout/alert_1.xml" value="0.1953125" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12/app/src/main/res/layout/alert_2.xml" value="0.1953125" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12/app/src/main/res/layout/alert_3.xml" value="0.1953125" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12/app/src/main/res/layout/alert_4.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12/app/src/main/res/layout/alert_dialogs.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12/app/src/main/res/layout/scroll_view_layout.xml" value="0.2" />
       </map>

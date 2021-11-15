@@ -4,61 +4,187 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/normal_chips"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        />
     <com.google.android.material.chip.ChipGroup
-        android:layout_width="wrap_content"
+        android:id="@+id/chipGroup1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/textView1">
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip1"
+            android:id="@+id/normalChip1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chip1"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="109dp"
+            android:text="@string/normal_chip_1"
             tools:ignore="MissingConstraints" />
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip2"
+            android:id="@+id/normalChip2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chip2"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="109dp"
+            android:text="@string/normal_chip_2"
             tools:ignore="MissingConstraints" />
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip3"
+            android:id="@+id/normalChip3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chip3"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="109dp"
+            android:text="@string/normal_chip_3"
             tools:ignore="MissingConstraints" />
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chip4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chip4"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="109dp"
-            tools:ignore="MissingConstraints" />
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chip5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chip5"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="109dp"
-            tools:ignore="MissingConstraints" />
+
     </com.google.android.material.chip.ChipGroup>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup1"
+        android:text="@string/input_chips"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        />
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/inputChip1"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_chip_1"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/inputChip2"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_chip_2"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/inputChip3"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_chip_3"/>
+    </com.google.android.material.chip.ChipGroup>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup2"
+        android:text="@string/filter_chips"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        />
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filterChip1"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/filter_chip_1"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filterChip2"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/filter_chip_2"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filterChip3"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_chip_3"/>
+    </com.google.android.material.chip.ChipGroup>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup3"
+        android:text="@string/choice_chips"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        />
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/choiceChip1"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/choice_chip_1"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/choiceChip2"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_chip_2"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/choiceChip3"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_chip_3"/>
+    </com.google.android.material.chip.ChipGroup>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup4"
+        android:text="@string/action_chips"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/actionChip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIconTint="#a1a1a1"
+            app:chipIcon="@drawable/thumb_up_icon"
+            android:text="@string/action_chip_1"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/actionChip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIconTint="#a1a1a1"
+            app:chipIcon="@drawable/favorite_icon"
+            android:text="@string/action_chip_2"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/actionChip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipIconTint="#a1a1a1"
+            app:chipIcon="@drawable/delete_icon"
+            android:text="@string/action_chip_3"/>
+    </com.google.android.material.chip.ChipGroup>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
